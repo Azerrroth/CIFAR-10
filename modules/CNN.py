@@ -113,7 +113,8 @@ class Net(nn.Module):
             optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             initepoch = checkpoint['epoch']
             loss = checkpoint['loss']
-
+        lossss = []
+        accccc = []
         for epoch in range(initepoch, 100):  # loop over the dataset multiple times
             timestart = time.time()
 
@@ -140,12 +141,15 @@ class Net(nn.Module):
                 if i % 500 == 499:  # print every 500 mini-batches
                     print('[%d, %5d] loss: %.4f' %
                           (epoch, i, running_loss / 500))
+                    lossss.append(running_loss / 500)
+
                     running_loss = 0.0
                     _, predicted = torch.max(outputs.data, 1)
                     total += labels.size(0)
                     correct += (predicted == labels).sum().item()
                     print('Accuracy of the network on the %d tran images: %.3f %%' % (total,
                                                                                       100.0 * correct / total))
+                    accccc.append(100.0 * correct / total)
                     total = 0
                     correct = 0
                     torch.save({'epoch': epoch,
@@ -155,7 +159,9 @@ class Net(nn.Module):
                                 }, path)
 
             print('epoch %d cost %3f sec' % (epoch, time.time()-timestart))
-
+        with open('./trainAns', 'w') as fw:
+            for i in range(len(lossss)):
+                fw.write(str(lossss[i])+','+str(accccc[i])+'\n')
         print('Finished Training')
 
     def test(self, device, classes):

@@ -8,6 +8,11 @@ import time
 import os
 
 import modules.CNN as CNN
+import modules.FCNN as FCNN
+import modules.RNN as RNN
+import modules.Logistic as Logistic
+
+
 
 if __name__ == "__main__":
     transform = transforms.Compose(
@@ -39,5 +44,5 @@ if __name__ == "__main__":
     print(device)
     net = CNN.Net(trainloader=trainloader, testloader=testloader)
     net = net.to(device)
-    net.train_sgd(device)
+    net.train(device)
     net.test(device,  classes=classes)

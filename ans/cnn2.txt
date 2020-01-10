@@ -1,0 +1,317 @@
+cuda:0
+[0,   499] loss: 1.4192
+Accuracy of the network on the 100 tran images: 58.000 %
+epoch 0 cost 81.121724 sec
+/home/lihaozhe/anaconda3/envs/network/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type CrossEntropyLoss. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+[1,   499] loss: 0.9304
+Accuracy of the network on the 100 tran images: 68.000 %
+epoch 1 cost 77.194269 sec
+[2,   499] loss: 0.7517
+Accuracy of the network on the 100 tran images: 70.000 %
+epoch 2 cost 77.120774 sec
+[3,   499] loss: 0.6418
+Accuracy of the network on the 100 tran images: 75.000 %
+epoch 3 cost 76.019157 sec
+[4,   499] loss: 0.5726
+Accuracy of the network on the 100 tran images: 81.000 %
+epoch 4 cost 75.007038 sec
+[5,   499] loss: 0.5139
+Accuracy of the network on the 100 tran images: 82.000 %
+epoch 5 cost 74.911942 sec
+[6,   499] loss: 0.4604
+Accuracy of the network on the 100 tran images: 84.000 %
+epoch 6 cost 74.914379 sec
+[7,   499] loss: 0.4252
+Accuracy of the network on the 100 tran images: 87.000 %
+epoch 7 cost 74.621166 sec
+[8,   499] loss: 0.3890
+Accuracy of the network on the 100 tran images: 86.000 %
+epoch 8 cost 74.751520 sec
+[9,   499] loss: 0.3564
+Accuracy of the network on the 100 tran images: 87.000 %
+epoch 9 cost 75.157453 sec
+[10,   499] loss: 0.3286
+Accuracy of the network on the 100 tran images: 83.000 %
+epoch 10 cost 75.096495 sec
+[11,   499] loss: 0.3005
+Accuracy of the network on the 100 tran images: 93.000 %
+epoch 11 cost 74.958874 sec
+[12,   499] loss: 0.2830
+Accuracy of the network on the 100 tran images: 92.000 %
+epoch 12 cost 75.076230 sec
+[13,   499] loss: 0.2599
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 13 cost 75.116574 sec
+[14,   499] loss: 0.2417
+Accuracy of the network on the 100 tran images: 90.000 %
+epoch 14 cost 75.886313 sec
+[15,   499] loss: 0.2207
+Accuracy of the network on the 100 tran images: 90.000 %
+epoch 15 cost 75.584041 sec
+[16,   499] loss: 0.2106
+Accuracy of the network on the 100 tran images: 93.000 %
+epoch 16 cost 76.079162 sec
+[17,   499] loss: 0.1961
+Accuracy of the network on the 100 tran images: 94.000 %
+epoch 17 cost 75.339982 sec
+[18,   499] loss: 0.1883
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 18 cost 75.825197 sec
+[19,   499] loss: 0.1722
+Accuracy of the network on the 100 tran images: 90.000 %
+epoch 19 cost 76.673721 sec
+[20,   499] loss: 0.1656
+Accuracy of the network on the 100 tran images: 93.000 %
+epoch 20 cost 77.196539 sec
+[21,   499] loss: 0.1619
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 21 cost 76.507009 sec
+[22,   499] loss: 0.1474
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 22 cost 75.700889 sec
+[23,   499] loss: 0.1407
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 23 cost 77.522353 sec
+[24,   499] loss: 0.1350
+Accuracy of the network on the 100 tran images: 94.000 %
+epoch 24 cost 76.344290 sec
+[25,   499] loss: 0.1291
+Accuracy of the network on the 100 tran images: 93.000 %
+epoch 25 cost 76.936141 sec
+[26,   499] loss: 0.1220
+Accuracy of the network on the 100 tran images: 90.000 %
+epoch 26 cost 76.651974 sec
+[27,   499] loss: 0.1157
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 27 cost 77.194067 sec
+[28,   499] loss: 0.1162
+Accuracy of the network on the 100 tran images: 95.000 %
+epoch 28 cost 76.705071 sec
+[29,   499] loss: 0.1139
+Accuracy of the network on the 100 tran images: 95.000 %
+epoch 29 cost 77.230773 sec
+[30,   499] loss: 0.1052
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 30 cost 76.776866 sec
+[31,   499] loss: 0.1050
+Accuracy of the network on the 100 tran images: 95.000 %
+epoch 31 cost 77.351151 sec
+[32,   499] loss: 0.1021
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 32 cost 77.155399 sec
+[33,   499] loss: 0.1017
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 33 cost 76.542541 sec
+[34,   499] loss: 0.0936
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 34 cost 74.390028 sec
+[35,   499] loss: 0.0916
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 35 cost 72.934665 sec
+[36,   499] loss: 0.0906
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 36 cost 72.890053 sec
+[37,   499] loss: 0.0881
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 37 cost 72.861889 sec
+[38,   499] loss: 0.0887
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 38 cost 72.949018 sec
+[39,   499] loss: 0.0797
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 39 cost 72.996693 sec
+[40,   499] loss: 0.0813
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 40 cost 72.932451 sec
+[41,   499] loss: 0.0781
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 41 cost 72.975037 sec
+[42,   499] loss: 0.0790
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 42 cost 73.081434 sec
+[43,   499] loss: 0.0796
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 43 cost 72.847639 sec
+[44,   499] loss: 0.0702
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 44 cost 72.895610 sec
+[45,   499] loss: 0.0771
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 45 cost 76.464007 sec
+[46,   499] loss: 0.0730
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 46 cost 73.842455 sec
+[47,   499] loss: 0.0692
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 47 cost 73.156462 sec
+[48,   499] loss: 0.0716
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 48 cost 73.991809 sec
+[49,   499] loss: 0.0679
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 49 cost 73.361673 sec
+[50,   499] loss: 0.0680
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 50 cost 73.372276 sec
+[51,   499] loss: 0.0644
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 51 cost 74.838613 sec
+[52,   499] loss: 0.0673
+Accuracy of the network on the 100 tran images: 94.000 %
+epoch 52 cost 73.968970 sec
+[53,   499] loss: 0.0618
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 53 cost 74.451205 sec
+[54,   499] loss: 0.0631
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 54 cost 75.063472 sec
+[55,   499] loss: 0.0597
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 55 cost 76.546945 sec
+[56,   499] loss: 0.0591
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 56 cost 76.657014 sec
+[57,   499] loss: 0.0611
+Accuracy of the network on the 100 tran images: 94.000 %
+epoch 57 cost 73.886564 sec
+[58,   499] loss: 0.0606
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 58 cost 78.401054 sec
+[59,   499] loss: 0.0579
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 59 cost 77.033237 sec
+[60,   499] loss: 0.0593
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 60 cost 74.435889 sec
+[61,   499] loss: 0.0548
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 61 cost 78.103811 sec
+[62,   499] loss: 0.0605
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 62 cost 76.355747 sec
+[63,   499] loss: 0.0526
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 63 cost 76.892047 sec
+[64,   499] loss: 0.0517
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 64 cost 76.069519 sec
+[65,   499] loss: 0.0524
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 65 cost 74.232861 sec
+[66,   499] loss: 0.0545
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 66 cost 73.493055 sec
+[67,   499] loss: 0.0518
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 67 cost 73.238530 sec
+[68,   499] loss: 0.0521
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 68 cost 77.576850 sec
+[69,   499] loss: 0.0526
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 69 cost 74.071947 sec
+[70,   499] loss: 0.0532
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 70 cost 76.050071 sec
+[71,   499] loss: 0.0506
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 71 cost 75.171931 sec
+[72,   499] loss: 0.0478
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 72 cost 76.306764 sec
+[73,   499] loss: 0.0465
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 73 cost 75.162426 sec
+[74,   499] loss: 0.0514
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 74 cost 75.595520 sec
+[75,   499] loss: 0.0509
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 75 cost 74.413824 sec
+[76,   499] loss: 0.0496
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 76 cost 73.318379 sec
+[77,   499] loss: 0.0446
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 77 cost 73.335193 sec
+[78,   499] loss: 0.0455
+Accuracy of the network on the 100 tran images: 96.000 %
+epoch 78 cost 73.217995 sec
+[79,   499] loss: 0.0478
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 79 cost 73.261933 sec
+[80,   499] loss: 0.0467
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 80 cost 73.318373 sec
+[81,   499] loss: 0.0494
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 81 cost 73.216280 sec
+[82,   499] loss: 0.0435
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 82 cost 73.260012 sec
+[83,   499] loss: 0.0413
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 83 cost 72.918263 sec
+[84,   499] loss: 0.0418
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 84 cost 72.884056 sec
+[85,   499] loss: 0.0448
+Accuracy of the network on the 100 tran images: 100.000 %
+epoch 85 cost 72.931052 sec
+[86,   499] loss: 0.0473
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 86 cost 72.911145 sec
+[87,   499] loss: 0.0438
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 87 cost 72.918392 sec
+[88,   499] loss: 0.0412
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 88 cost 72.888532 sec
+[89,   499] loss: 0.0429
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 89 cost 72.820875 sec
+[90,   499] loss: 0.0405
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 90 cost 72.815122 sec
+[91,   499] loss: 0.0399
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 91 cost 72.787730 sec
+[92,   499] loss: 0.0387
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 92 cost 72.929365 sec
+[93,   499] loss: 0.0409
+Accuracy of the network on the 100 tran images: 98.000 %
+epoch 93 cost 72.865817 sec
+[94,   499] loss: 0.0425
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 94 cost 72.968038 sec
+[95,   499] loss: 0.0401
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 95 cost 72.934074 sec
+[96,   499] loss: 0.0387
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 96 cost 72.900204 sec
+[97,   499] loss: 0.0387
+Accuracy of the network on the 100 tran images: 99.000 %
+epoch 97 cost 72.923281 sec
+[98,   499] loss: 0.0418
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 98 cost 72.891102 sec
+[99,   499] loss: 0.0336
+Accuracy of the network on the 100 tran images: 97.000 %
+epoch 99 cost 73.115967 sec
+Finished Training
+Accuracy of the network on the 10000 test images: 84.780 %
+Accuracy of the network on the 10000 test images: 84.870 %
+Accuracy of plane : 92 %
+Accuracy of   car : 92 %
+Accuracy of  bird : 80 %
+Accuracy of   cat : 60 %
+Accuracy of  deer : 85 %
+Accuracy of   dog : 68 %
+Accuracy of  frog : 88 %
+Accuracy of horse : 85 %
+Accuracy of  ship : 93 %
+Accuracy of truck : 88 %
+

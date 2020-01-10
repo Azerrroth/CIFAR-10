@@ -97,10 +97,10 @@ class Net(nn.Module):
 
         return x
 
-    def train_sgd(self, device):
+    def train(self, device):
         optimizer = optim.Adam(self.parameters(), lr=0.0001)
 
-        path = 'weights.tar'
+        path = 'CNN_module.tar'
         initepoch = 0
 
         if os.path.exists(path) is not True:
@@ -138,7 +138,7 @@ class Net(nn.Module):
                 # print statistics
                 running_loss += l.item()
                 # print("i ",i)
-                if i % 500 == 499:  # print every 500 mini-batches
+                if i % 500 == 0:  # print every 500 mini-batches
                     print('[%d, %5d] loss: %.4f' %
                           (epoch, i, running_loss / 500))
                     lossss.append(running_loss / 500)
@@ -159,7 +159,8 @@ class Net(nn.Module):
                                 }, path)
 
             print('epoch %d cost %3f sec' % (epoch, time.time()-timestart))
-        with open('./trainAns', 'w') as fw:
+        with open('./cnnAns.csv', 'w') as fw:
+            fw.write('loss,ans\n')
             for i in range(len(lossss)):
                 fw.write(str(lossss[i])+','+str(accccc[i])+'\n')
         print('Finished Training')

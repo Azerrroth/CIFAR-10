@@ -15,10 +15,14 @@
 
 1. 加载训练集
 2. 使用`transforms`对数据进行预处理
+3. 定义神经网络模型
+4. 使用定义的网络模型进行训练
+5. 对训练好的模型进行测试，测试模型的整体准确性和针对不同类型的准确性。
 
-### 卷积神经网络
 
-#### 模型构建
+### 模型构建
+
+#### 卷积神经网络
 
 构建卷积神经网络模型，使用多层次的$卷积层+池化层$。
 这里模仿了 VGG 的网络模型，使用了多个$3\times3$的卷积核。经检验，这样的模型的识别效果表现还不错。
@@ -156,7 +160,7 @@ class Net(nn.Module):
         return x
 ```
 
-### 全连接神经网络
+#### 全连接神经网络
 
 全连接神经网络设计了 8 层全连接层，将原来的$32\times32\times3$的数据逐步降维，最终分为 10 类。
 | Input（32×32×3）color image|
@@ -199,7 +203,7 @@ class Net(nn.Module):
         return x
 ```
 
-### 循环神经网络
+#### 循环神经网络
 
 循环神经网络使用长短期记忆(Long Short-Term Memory，LSTM)这样的时间循环神经网络，虽然其强项在于处理和预测时间序列中间隔和延迟非常长的重要事件，但在这里也可以用来对图像进行分类。
 LSTM 模型定义如下：
@@ -220,7 +224,7 @@ class Net(nn.Module):
         return self.output(out)
 ```
 
-### Logistic Regression
+#### Logistic Regression
 
 在 Pytorch 中，`nn.Linear`使用的就是 Logistic Regression，所以这里只需要设计一层由 $32\times32\times3$到$10$的线性回归即可。
 | Input（32×32×3）color image|

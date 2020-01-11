@@ -37,7 +37,7 @@ class Net(nn.Module):
 
     def train(self, device):
         optimizer = optim.Adam(self.parameters(), lr=0.0001)
-        path = 'fcnn_module.tar'
+        path = 'FCNN_module.tar'
         initepoch = 0
 
         if os.path.exists(path) is not True:
@@ -98,7 +98,6 @@ class Net(nn.Module):
 
             print('epoch %d cost %3f sec' % (epoch, time.time()-timestart))
         with open('./fcnnAns.csv', 'w') as fw:
-            fw.write('loss,acc\n')
             for i in range(len(lossss)):
                 fw.write(str(lossss[i])+','+str(accccc[i])+'\n')
         print('Finished Training')
@@ -126,7 +125,6 @@ class Net(nn.Module):
 
         print('Accuracy of the network on the 10000 test images: %.3f %%' % (
             100.0 * correct / total))
-
 
         for i in range(len(classes)):
             print('Accuracy of %5s : %2d %%' % (

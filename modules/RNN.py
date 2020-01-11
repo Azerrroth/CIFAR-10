@@ -8,19 +8,20 @@ import torchvision.transforms as transforms
 import os
 from torch.autograd import Variable
 
+
 class Net(nn.Module):
     def __init__(self, trainloader, testloader):
         self.trainloader = trainloader
         self.testloader = testloader
 
-        super(Net,self).__init__()
+        super(Net, self).__init__()
         self.LSTM = nn.LSTM(32 * 3, 128, num_layers=3, batch_first=True)
-        self.line=nn.Linear(128,128)
-        self.output = nn.Linear(128,10)
+        self.line = nn.Linear(128, 128)
+        self.output = nn.Linear(128, 10)
 
-    def forward(self,x):
-        out,(h_n,c_n) = self.LSTM(x)
-        out=self.line(out[:,-1,:])
+    def forward(self, x):
+        out, (h_n, c_n) = self.LSTM(x)
+        out = self.line(out[:, -1, :])
         return self.output(out)
 
     def train(self, device):
@@ -110,9 +111,9 @@ class Net(nn.Module):
                 _, predicted = torch.max(outputs, 1)
                 c = (predicted == labels).squeeze()
                 for i in range(4):
-                  label = labels[i]
-                  class_correct[label] += c[i].item()
-                  class_total[label] += 1
+                    label = labels[i]
+                    class_correct[label] += c[i].item()
+                    class_total[label] += 1
 
         print('Accuracy of the network on the 10000 test images: %.3f %%' % (
             100.0 * correct / total))

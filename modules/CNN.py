@@ -87,7 +87,7 @@ class Net(nn.Module):
         x = self.pool5(x)
         x = self.bn5(x)
         x = self.relu5(x)
-        # print(" x shape ",x.size())
+
         x = x.view(-1, 512*4*4)
         x = F.relu(self.fc14(x))
         x = self.drop1(x)
@@ -105,7 +105,6 @@ class Net(nn.Module):
 
         if os.path.exists(path) is not True:
             loss = nn.CrossEntropyLoss()
-            # optimizer = optim.SGD(self.parameters(),lr=0.01)
 
         else:
             checkpoint = torch.load(path)
@@ -115,30 +114,25 @@ class Net(nn.Module):
             loss = checkpoint['loss']
         lossss = []
         accccc = []
-        for epoch in range(initepoch, 100):  # loop over the dataset multiple times
+        for epoch in range(initepoch, 100):
             timestart = time.time()
 
             running_loss = 0.0
             total = 0
             correct = 0
             for i, data in enumerate(self.trainloader, 0):
-                # get the inputs
                 inputs, labels = data
                 inputs, labels = inputs.to(device), labels.to(device)
 
-                # zero the parameter gradients
                 optimizer.zero_grad()
 
-                # forward + backward + optimize
                 outputs = self(inputs)
                 l = loss(outputs, labels)
                 l.backward()
                 optimizer.step()
 
-                # print statistics
                 running_loss += l.item()
-                # print("i ",i)
-                if i % 500 == 0:  # print every 500 mini-batches
+                if i % 500 == 0: 
                     print('[%d, %5d] loss: %.4f' %
                           (epoch, i, running_loss / 500))
                     lossss.append(running_loss / 500)
@@ -168,6 +162,8 @@ class Net(nn.Module):
     def test(self, device, classes):
         correct = 0
         total = 0
+        class_correct = list(0. for i in range(len(classes)))
+        class_total = list(0. for i in range(len(classes)))
         with torch.no_grad():
             for data in self.testloader:
                 images, labels = data
@@ -176,22 +172,14 @@ class Net(nn.Module):
                 _, predicted = torch.max(outputs.data, 1)
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
-
-        print('Accuracy of the network on the 10000 test images: %.3f %%' % (
-            100.0 * correct / total))
-
-        class_correct = list(0. for i in range(len(classes)))
-        class_total = list(0. for i in range(len(classes)))
-        with torch.no_grad():
-            for data in self.testloader:
-                images, labels = data
-                outputs = self(images)
                 _, predicted = torch.max(outputs, 1)
                 c = (predicted == labels).squeeze()
                 for i in range(4):
                     label = labels[i]
                     class_correct[label] += c[i].item()
                     class_total[label] += 1
+        print('Accuracy of the network on the 10000 test images: %.3f %%' % (
+            100.0 * correct / total))
 
         for i in range(len(classes)):
             print('Accuracy of %5s : %2d %%' % (

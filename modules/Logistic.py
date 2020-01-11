@@ -22,7 +22,7 @@ class Logistic_Regression(nn.Module):
 
     def train(self, device):
         optimizer = optim.Adam(self.parameters(), lr=0.0001)
-        path = 'logistic.tar'
+        path = 'logistic_module.tar'
         initepoch = 0
 
         if os.path.exists(path) is not True:
@@ -48,6 +48,7 @@ class Logistic_Regression(nn.Module):
                 # get the inputs
                 inputs, labels = data
                 inputs, labels = inputs.to(device), labels.to(device)
+                inputs = inputs.view(inputs.size(0), -1)
 
                 # zero the parameter gradients
                 optimizer.zero_grad()
@@ -87,7 +88,7 @@ class Logistic_Regression(nn.Module):
             for i in range(len(lossss)):
                 fw.write(str(lossss[i])+','+str(accccc[i])+'\n')
         print('Finished Training')
-  
+
     def test(self, device, classes):
         correct = 0
         total = 0
@@ -98,6 +99,8 @@ class Logistic_Regression(nn.Module):
             for data in self.testloader:
                 images, labels = data
                 images, labels = images.to(device), labels.to(device)
+                images = images.view(images.size(0), -1)
+
                 outputs = self(images)
                 _, predicted = torch.max(outputs.data, 1)
                 total += labels.size(0)
@@ -111,7 +114,6 @@ class Logistic_Regression(nn.Module):
 
         print('Accuracy of the network on the 10000 test images: %.3f %%' % (
             100.0 * correct / total))
-
 
         for i in range(len(classes)):
             print('Accuracy of %5s : %2d %%' % (
